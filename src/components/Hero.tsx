@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <a
-                href="/홍길동_이력서.pdf"
+                href="/이력서_자기소개서_박성재.pdf"
                 download={true}
                 className="inline-flex items-center justify-center px-8 py-3 border border-slate-700 text-base font-medium rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-all cursor-pointer"
               >

@@ -8,10 +8,10 @@ const Projects: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Featured Projects
+            주요 프로젝트
           </h2>
           <p className="mt-4 text-slate-400">
-            Applying skills to build practical solutions.
+            실무에 적용 가능한 서비스를 직접 설계하고 구현한 프로젝트입니다.
           </p>
         </div>
 
@@ -22,8 +22,8 @@ const Projects: React.FC = () => {
               className="group bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-900/20"
             >
               <div className="relative h-48 overflow-hidden">
-                <div className="absolute inset-0 bg-slate-800 animate-pulse" />{" "}
-                {/* Placeholder loading effect if img slow */}
+                <div className="absolute inset-0 bg-slate-800 animate-pulse" />
+                {/* 이미지 로딩 지연 시 표시되는 플레이스홀더 */}
                 <img
                   src={project.imageUrl}
                   alt={project.title}
@@ -53,17 +53,20 @@ const Projects: React.FC = () => {
 
                 <div className="flex items-center space-x-4">
                   <a
-                    href={`${project.repoUrl}`}
+                    href={project.repoUrl}
                     className="flex items-center text-sm text-white hover:text-blue-400 transition-colors"
                   >
-                    <Github className="h-4 w-4 mr-1" /> Code
+                    <Github className="h-4 w-4 mr-1" /> 소스 코드
                   </a>
-                  <a
-                    href={`${project.demoUrl}`}
-                    className="flex items-center text-sm text-white hover:text-blue-400 transition-colors"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-1" /> Live Demo
-                  </a>
+
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      className="flex items-center text-sm text-white hover:text-blue-400 transition-colors"
+                    >
+                      <ExternalLink className="h-4 w-4 mr-1" /> 데모 보기
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

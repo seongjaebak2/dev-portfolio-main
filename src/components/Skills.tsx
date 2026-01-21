@@ -7,10 +7,10 @@ const Skills: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Technical Expertise
+            기술 스택
           </h2>
           <p className="mt-4 text-slate-400">
-            A comprehensive toolkit for modern web development.
+            현대적인 웹 개발을 위한 핵심 기술 역량입니다.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ const Skills: React.FC = () => {
                       </p>
                       <div className="mt-2 h-1 w-full bg-slate-800 rounded-full overflow-hidden">
                         <div
-                          className={`h-full bg-linear-to-r from-slate-600 to-slate-400 w-[90%] rounded-full opacity-50 group-hover:opacity-100 transition-opacity`}
+                          className="h-full bg-linear-to-r from-slate-600 to-slate-400 w-[90%] rounded-full opacity-50 group-hover:opacity-100 transition-opacity"
                         ></div>
                       </div>
                     </div>
